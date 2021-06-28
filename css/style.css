@@ -1,0 +1,75 @@
+.animation {
+	background-image: url(../images/image1.jpg);
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+
+.background-image {
+	width: 100%;
+	
+}
+.littleprince {
+	width: 270px;
+	position: absolute;
+	top:260px ;
+	left:600px ;
+	animation: littleprince 6s linear infinite;
+}
+@keyframes littleprince {
+	0% {left: 600px; top: 260px;}
+	25% {left: 650px; top: 220px;}
+	50%{left: 700px; top: 200px;}
+	75%{left: 750px; top: 150px;}
+	100% {left: 800px; top: 80px;}
+}
+.littleprince:hover {
+	width: 300px;
+	transform: rotate(-10deg);
+}
+
+.rose {
+	width: 100px;
+	position: absolute;
+	top: 510px;
+	right: 390px;
+}
+.rose:hover {
+	width: 120px;
+	transform: rotate(3deg);
+}
+
+.ship {
+	width: 100px;
+	position: absolute;
+	top: 600px;
+	left: 20px;
+	animation: ship 7s linear infinite;
+}
+@keyframes ship {
+	0% {left: 20px; top: 600px;}
+	25% {left:100px; top: 500px;}
+	50%{left:150px ; top: 400px;}
+	75%{left: 200px; top: 300px;}
+	100% {left:250px; top: 200px;}
+}
+.ship:hover {
+	width: 130px;
+	transform: rotate(10deg);
+}
+
+.star {
+	width: 50px;
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	transform: rotate(30deg) scaleX(1.1) skew(5deg);
+	animation: star 4s ease 4;
+}
+
+@keyframes star {
+	0% {left: 300px;}
+	100%{left: 600px;}
+}
